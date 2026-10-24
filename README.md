@@ -1,6 +1,7 @@
 # Demo Grafana: sismos del mundo en tiempo real
 
 **Autor:** María Fernanda Rodríguez Ospina
+
 **Materia:** Analitica de datos
 
 ## Descripción
@@ -11,7 +12,7 @@ El dashboard incluye:
 - Un mapa con los sismos (el tamaño y el color indican la magnitud).
 - El total de sismos y la magnitud máxima.
 - Una tabla con los sismos más recientes.
-- Actualización automática cada 5 segundos.
+- Actualización automática cada 24 horas.
 
 ## Contenido de la entrega
 
