@@ -1,0 +1,17 @@
+services:
+  grafana:
+    image: grafana/grafana-oss
+    container_name: grafana-demo
+    ports:
+      - "3000:3000"
+    environment:
+      GF_INSTALL_PLUGINS: yesoreyeram-infinity-datasource
+      GF_AUTH_ANONYMOUS_ENABLED: "true"
+      GF_AUTH_ANONYMOUS_ORG_ROLE: Admin
+      GF_USERS_DEFAULT_THEME: dark
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - ./provisioning:/etc/grafana/provisioning
+
+volumes:
+  grafana-data:
